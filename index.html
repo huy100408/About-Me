@@ -51,6 +51,19 @@
             border-radius: 10px;
             box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
         }
+        .scrollable {
+            max-height: 200px;
+            overflow-y: auto;
+            scrollbar-width: thin;
+            scrollbar-color: #888 #333;
+        }
+        .scrollable::-webkit-scrollbar {
+            width: 8px;
+        }
+        .scrollable::-webkit-scrollbar-thumb {
+            background: #888;
+            border-radius: 4px;
+        }
         .profile-img {
             width: 100px;
             height: 100px;
@@ -102,14 +115,31 @@
         <img src="https://res.cloudinary.com/dzjajrfvh/image/upload/v1740217590/depzai_f2tmsk.jpg" alt="Profile Picture" class="profile-img">
         <div class="username">huy100408</div>
         <p>📍 Location:HCM CITY, VietNam</p>
-        <p>🏫 Schools: Cisvn https://cis.edu.vn/vi</p>
+        <p>🏫 Schools: Cisvn <a href="https://cis.edu.vn/vi" target="_blank">https://cis.edu.vn/vi</a></p>
         <p>💬 About Me: Tự Tin Mình Đẹp Trai.</p>
         <p>🎵 Favorite Music: Fein</p>
         <p>👨‍🏫 Favorite Teacher: Mr Drew</p>
         <p>🎮 Favorite Game: Valorant</p>
-        <p>🍕 Favorite Food: Udon,Ramen</p>
-        <p> 🖥 Skills:  Java,Python,Html,Lua</p>
+        <p>🍕 Favorite Food: Udon, Ramen</p>
+        <p> 🖥 Skills: Java, Python, HTML, Lua</p>
         <a href="https://discord.gg/pt4H9FnxBM" target="_blank" class="discord-link">Join my Discord server</a>
+    </div>
+    <div class="content scrollable" style="top: auto; bottom: 20px;">
+        <h3>Danh sách Client Roblox</h3>
+        <p>🟢 <strong>Android:</strong> <a href="#">click here to get</a></p>
+        <p>🟢 <strong>PC:</strong> <a href="#">click here to get</a></p>
+        <p>🟢 <strong>iOS:</strong> <a href="#">click here to get</a></p>
+        <p>📅 <strong>Update:</strong> 2/21/2025 (American) - 22/02/2025 (Việt Nam)</p>
+        <h4>IOS Clients:</h4>
+        <p><a href="#">Delta VNG + Codex VNG</a></p>
+        <p><a href="#">Delta (No VNG)</a></p>
+        <p><a href="#">Codex (No VNG)</a></p>
+        <p><a href="#">Arceus (No VNG)</a></p>
+        <h4>Android Clients:</h4>
+        <p><a href="#">Codex VNG</a></p>
+        <p><a href="#">Codex (No VNG)</a></p>
+        <p><a href="#">Delta VNG</a></p>
+        <p><a href="#">Delta (No VNG)</a></p>
     </div>
 </body>
 </html>
