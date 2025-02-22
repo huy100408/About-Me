@@ -22,10 +22,13 @@
             overflow: hidden;
             z-index: -1;
         }
-        video {
+        .background video {
             width: 100%;
             height: 100%;
             object-fit: cover;
+            position: absolute;
+            top: 0;
+            left: 0;
         }
         .overlay {
             position: fixed;
@@ -83,12 +86,20 @@
             <source src="https://res.cloudinary.com/dzjajrfvh/video/upload/v1740207702/4k_Naruto_Shippuden_Edit_-_Life_Force_RJ_Pasin_hg48cl.mp4" type="video/mp4">
         </video>
     </div>
-    <audio autoplay loop>
+    <audio id="background-music" autoplay loop>
         <source src="https://res.cloudinary.com/dzjajrfvh/video/upload/v1740207314/New_Jeans_-_Jersey_Club_Remix_TikTok_Version_Xyuk_Official_Video_j9jml4.mp3" type="audio/mpeg">
     </audio>
+    <script>
+        document.addEventListener('click', function() {
+            const music = document.getElementById('background-music');
+            if (music.paused) {
+                music.play().catch(error => console.log("Autoplay prevented:", error));
+            }
+        });
+    </script>
     <div class="overlay"></div>
     <div class="content">
-        <img src="https://res.cloudinary.com/dzjajrfvh/image/upload/v1740215853/zian_lsnqvq.png" alt="Profile Picture" class="profile-img">
+        <img src="your-discord-pfp.png" alt="Profile Picture" class="profile-img">
         <div class="username">huy100408</div>
         <p>📍 Location: Your City, Country</p>
         <p>🏫 Schools: Your School Names</p>
